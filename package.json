@@ -5,7 +5,7 @@
   "main": "dev_entry.js",
   "scripts": {
     "build": "pub build",
-    "postinstall": "dart tool/postinstall.dart",
+    "postinstall": "dart tool/postinstall.dart && bower install",
     "watch": "parallelshell \"dart tool/watch.dart\" \"npm start\"",
     "start": "electron ."
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/thosakwe/electron_ddc_boilerplate#readme",
   "devDependencies": {
+    "bower": "^1.8.2",
     "express": "^4.16.2",
     "parallelshell": "^3.0.2"
   },
